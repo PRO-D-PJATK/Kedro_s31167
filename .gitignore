@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.DS_Store
+.env
+conf/local/*
+!conf/local/.gitkeep
+data/02_intermediate/*
+!data/02_intermediate/.gitkeep
+data/06_models/*
+!data/06_models/.gitkeep
+data/08_reporting/*
+!data/08_reporting/.gitkeep
+logs/
