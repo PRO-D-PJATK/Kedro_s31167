@@ -1,0 +1,35 @@
+iris_raw:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/iris.csv
+
+iris_validated:
+  type: MemoryDataset
+
+iris_clean:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/iris_clean.csv
+  save_args:
+    index: false
+
+X_train:
+  type: MemoryDataset
+
+X_test:
+  type: MemoryDataset
+
+y_train:
+  type: MemoryDataset
+
+y_test:
+  type: MemoryDataset
+
+iris_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/iris_model.pkl
+
+iris_metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/metrics.json
+  save_args:
+    indent: 2
+    sort_keys: true

@@ -1,0 +1,5 @@
+kedro==0.19.14
+kedro-datasets[pandas-csv,pickle,json]==6.0.0
+numpy==2.2.6
+pandas==2.2.3
+scikit-learn==1.6.1
